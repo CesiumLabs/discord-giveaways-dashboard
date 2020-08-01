@@ -1,0 +1,18 @@
+<%- include("./partials/header.ejs") %>
+
+<body>
+    <div class="container">
+
+        <%- include("./partials/nav.ejs") %>
+
+        <div class="jumbotron bg-dark text-white mt-5">
+            <h1 class="text-center statusCode"><%= code || 500 %></h1>
+            <h5 class="text-center"><%= error ? error : "Internal Server Error" %></h5>
+            <center class="mt-5">
+                <button class="btn btn-success" onclick="location.href='/'">Home</button>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

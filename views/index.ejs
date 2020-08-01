@@ -1,0 +1,33 @@
+<%- include("./partials/header.ejs") %>
+
+<body onload="updateTheme()">
+    <div class="container">
+
+        <%- include("./partials/nav.ejs") %>
+
+        <div class="jumbotron bg-dark text-white mt-5">
+            <% if (error) { %>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong><%= String(error) %></strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <% } %>
+
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

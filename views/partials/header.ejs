@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <div class="mode">
+        <link rel="stylesheet" href="/css/light.min.css">
+    </div>
+    <!-- JS -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js" defer></script>
+    <script>
+    function updateTheme() {
+        if (getCookie("theme") === "dark") {
+            return $(".mode").html("<link rel=\"stylesheet\" href=\"/css/dark.min.css\">");
+        } else {
+            return $(".mode").html("<link rel=\"stylesheet\" href=\"/css/light.min.css\">");
+        }
+    }
+    </script>
+</head>
