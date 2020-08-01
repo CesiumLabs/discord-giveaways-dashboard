@@ -1,6 +1,6 @@
 {
   "name": "discord-giveaways-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy to use dashboard for discord-giveaways.",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PrismNine/discord-giveaways-dashboard"
+    "url": "https://github.com/ItsJustNine/discord-giveaways-dashboard"
   },
   "keywords": [
     "discord-giveaways",
     "dashboard",
-    "prismnine",
+    "ItsJustNine",
     "discord-giveaways-dashboard"
   ],
-  "author": "PrismNine",
+  "author": "ItsJustNine",
   "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.3",
